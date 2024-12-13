@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  background-color: #7f39fb;
+}
+.header__logo {
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  display: block;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #222;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 20;
+  box-shadow: 0px 3px 8px #333;
+  cursor: pointer;
+}
+.menu__line {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 13px;
+  transition-duration: 0.4s;
+}
+.menu__line:nth-child(1) {
+  top: 14px;
+}
+.menu__line:nth-child(2) {
+  top: 23px;
+}
+.menu__line:nth-child(3) {
+  bottom: 14px;
+}
+.menu.active {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+.menu.active .menu__line:nth-child(1) {
+  transform: translate(-12px, 9px) rotate(-45deg);
+}
+.menu.active .menu__line:nth-child(2) {
+  transition-duration: 0s;
+  opacity: 0;
+}
+.menu.active .menu__line:nth-child(3) {
+  transform: translate(-12px, -9px) rotate(45deg);
+}
+
+.nav {
+  display: block;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #222;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  transition-duration: 0.4s;
+}
+.nav.open {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 430px;
+  height: 932px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__list {
+  display: none;
+}
+.nav__list.show {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 224px;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 100%;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.nav__item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.nav__item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav__item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.nav__item:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.nav__item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.nav__link {
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-display: swap;
+  font-family: "made_tommyregular";
+  src: url("../fonts/made_tommy_regular_personal_use-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "made_tommyextrabold";
+  src: url("../fonts/made_tommy_extrabold_personal_use-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "creato_displayregular";
+  src: url("../fonts/creatodisplay-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  color: #002D62;
+  max-width: 430px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: grey;
+}
+
+p {
+  font-family: "creato_displayregular";
+  font-size: 14px;
+}
+
+a {
+  color: #002D62;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  font-family: "made_tommyregular";
+}
+
+h2,
+h3,
+h4 {
+  font-family: "made_tommyregular";
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin-left: 36px;
+  padding: 8px;
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+
+/*---------------------header--------------------------*/
+#bandeau {
+  background-color: #DCECF3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+#bandeau img {
+  width: 108px;
+}
+
+/*------------------Burger----------------------*/
+.nav {
+  background-color: #0B4E9C;
+}
+.nav.open {
+  background-color: #0B4E9C;
+}
+
+.menu {
+  background-color: #0B4E9C;
+}
+
+.nav__link {
+  color: #DCECF3;
+}
+
+/*--------------------slider--------------------*/
+.swiper {
+  margin-top: 80px;
+  height: 247px;
+  width: 355px;
+}
+.swiper .swiper-slide {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-slide h1 {
+  font-family: "made_tommyextrabold";
+  font-size: 1.9rem;
+  background-color: rgba(0, 45, 98, 0.7);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.swiper img {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.swiper .swiper-button-prev {
+  display: none;
+}
+.swiper .swiper-button-next {
+  display: none;
+}
+
+#presentation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 36px;
+}
+#presentation p {
+  background-color: #DCECF3;
+  padding: 8px;
+  line-height: 1.5;
+}
+#presentation p span {
+  font-weight: 900;
+}
+
+/*---------------------------Horaires et cours-------------------------------*/
+.carte-gym {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 36px;
+  margin-bottom: 56px;
+}
+.carte-gym .gym-img img {
+  width: 100%;
+  height: auto;
+}
+.carte-gym .gym-info {
+  background-color: #DCECF3;
+  padding: 20px;
+  text-align: center;
+}
+.carte-gym .gym-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.carte-gym .gym-info .complement {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.carte-gym .tableau-edt {
+  background-color: #DCECF3;
+}
+.carte-gym .tableau-edt .edt-header {
+  background-color: #A4BECA;
+}
+.carte-gym .edt-header,
+.carte-gym .edt-contenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 0;
+  border-bottom: 3px solid #0B4E9C;
+  text-align: center;
+}
+.carte-gym .edt-contenu {
+  border-bottom: none;
+}
+.carte-gym .edt-header {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
