@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.carte-coach {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 391px;
+  margin: auto;
+  margin-bottom: 56px;
+}
+.carte-coach .gym-img img {
+  width: 100%;
+  height: auto;
+}
+.carte-coach .gym-info {
+  background-color: #DCECF3;
+  padding: 20px;
+  text-align: center;
+}
+.carte-coach .gym-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.carte-coach .gym-info .complement {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.carte-coach .tableau-edt {
+  background-color: #DCECF3;
+}
+.carte-coach .tableau-edt p {
+  font-family: "made_tommyregular";
+  font-weight: 500;
+}
+.carte-coach .tableau-edt .edt-header {
+  background-color: #A4BECA;
+}
+.carte-coach .edt-header,
+.carte-coach .edt-contenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 0;
+  border-bottom: 3px solid #0B4E9C;
+  text-align: center;
+}
+.carte-coach .edt-contenu {
+  border-bottom: none;
+}
+.carte-coach .edt-header p {
+  font-weight: 900;
+}/*# sourceMappingURL=nos-coachs.css.map */

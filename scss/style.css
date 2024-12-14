@@ -108,9 +108,8 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  margin-top: 224px;
 }
 .nav__item {
   display: flex;
@@ -157,6 +156,56 @@
     opacity: 1;
   }
 }
+.carte-coach {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 391px;
+  margin: auto;
+  margin-bottom: 56px;
+}
+.carte-coach .gym-img img {
+  width: 100%;
+  height: auto;
+}
+.carte-coach .gym-info {
+  background-color: #DCECF3;
+  padding: 20px;
+  text-align: center;
+}
+.carte-coach .gym-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.carte-coach .gym-info .complement {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.carte-coach .tableau-edt {
+  background-color: #DCECF3;
+}
+.carte-coach .tableau-edt p {
+  font-family: "made_tommyregular";
+  font-weight: 500;
+}
+.carte-coach .tableau-edt .edt-header {
+  background-color: #A4BECA;
+}
+.carte-coach .edt-header,
+.carte-coach .edt-contenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 0;
+  border-bottom: 3px solid #0B4E9C;
+  text-align: center;
+}
+.carte-coach .edt-contenu {
+  border-bottom: none;
+}
+.carte-coach .edt-header p {
+  font-weight: 900;
+}
+
 @font-face {
   font-display: swap;
   font-family: "made_tommyregular";
@@ -215,7 +264,7 @@ h4 {
 h2 {
   font-size: 1.7rem;
   text-transform: uppercase;
-  margin-left: 36px;
+  margin-left: 11px;
   padding: 8px;
   margin-top: 56px;
   margin-bottom: 16px;
@@ -253,7 +302,7 @@ h2 {
 .swiper {
   margin-top: 80px;
   height: 247px;
-  width: 355px;
+  width: 391px;
 }
 .swiper .swiper-slide {
   background-size: cover;
@@ -288,7 +337,8 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 0 36px;
+  width: 391px;
+  margin: auto;
 }
 #presentation p {
   background-color: #DCECF3;
@@ -304,8 +354,8 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  max-width: 800px;
-  margin: 0 36px;
+  max-width: 391px;
+  margin: auto;
   margin-bottom: 56px;
 }
 .carte-gym .gym-img img {
@@ -328,6 +378,10 @@ h2 {
 .carte-gym .tableau-edt {
   background-color: #DCECF3;
 }
+.carte-gym .tableau-edt p {
+  font-family: "made_tommyregular";
+  font-weight: 500;
+}
 .carte-gym .tableau-edt .edt-header {
   background-color: #A4BECA;
 }
@@ -342,6 +396,69 @@ h2 {
 .carte-gym .edt-contenu {
   border-bottom: none;
 }
-.carte-gym .edt-header {
+.carte-gym .edt-header p {
+  font-weight: 900;
+}
+
+.carte-gym:last-child .tableau-edt .edt-header p {
+  font-weight: 500;
+}
+
+/*-----------------------Tarifs-----------------------------*/
+.tableau-tarifs {
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #DCECF3;
+  font-family: "made_tommyregular";
+  text-align: center;
+  border: solid 1px #0B4E9C;
+}
+.tableau-tarifs th {
+  background-color: #0B4E9C;
+  color: #DCECF3;
+  padding: 12px;
+  text-transform: uppercase;
   font-weight: bold;
+}
+.tableau-tarifs td {
+  padding: 10px;
+  border: 1px solid #0B4E9C;
+}
+.tableau-tarifs td br {
+  margin-bottom: 5px;
+}
+.tableau-tarifs tr:nth-child(even) {
+  background-color: #DCECF3;
+}
+.tableau-tarifs th:nth-child(3) {
+  padding: 10px 25px;
+}
+.tableau-tarifs th:nth-child(1) {
+  padding: 10px 15px;
+}
+
+/*--------------------Pied de page---------------------------*/
+#pied {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #DCECF3;
+  margin-top: 100px;
+  padding: 48px 16px;
+}
+#pied img {
+  width: 108px;
+}
+#pied .copyright {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pied a {
+  font-family: "creato_displayregular";
+  margin-top: 15px;
+  font-size: 14px;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

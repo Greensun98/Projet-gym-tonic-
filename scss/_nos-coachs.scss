@@ -1,0 +1,64 @@
+.carte-coach {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 391px;
+    margin: auto;
+    margin-bottom: 56px;
+
+    .gym-img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .gym-info {
+        background-color: $background2;
+        padding: 20px;
+        text-align: center;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .complement {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    }
+
+    .tableau-edt {
+        background-color: $background2;
+
+        p {
+            font-family: "made_tommyregular";
+            font-weight: 500;
+        }
+
+        .edt-header {
+
+            background-color: $background3;
+        }
+    }
+
+    .edt-header,
+    .edt-contenu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px 0;
+        border-bottom: 3px solid $background1;
+        text-align: center;
+    }
+
+    .edt-contenu {
+        border-bottom: none;
+    }
+
+    .edt-header p {
+        font-weight: 900;
+
+    }
+
+}

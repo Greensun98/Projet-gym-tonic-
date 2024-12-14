@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM tonic</title>
+    <!-- <meta name ="description" content=""> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="scss/lightbox.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <header id="bandeau" class="container">
+        <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
+                alt="Logo fédération Française"></a>
+    </header>
+
+    <body class="container">
+        <div class="menu js-menu">
+            <span class="menu__line"></span>
+            <span class="menu__line"></span>
+            <span class="menu__line"></span>
+        </div>
+        <nav class="nav js-nav">
+            <ul class="nav__list js-nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">ACCUEIL</a></li>
+                <li class="nav__item"><a href="nos-coachs.html" class="nav__link">NOS COACHS</a></li>
+                <li class="nav__item"><a href="galerie.html" class="nav__link">GALERIE</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">NEWS</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">CONTACT & INSCRIPTIONS</a></li>
+            </ul>
+        </nav>
+        <section id="galerie" class="container">
+            <div id="liste-produits">
+                <article class="produit">
+                    <a href="images/image1.jpg" data-lightbox="image-mode" data-title="Sunset Beach">
+                        <img src="images/image1.jpg">
+                    </a>
+                    <h3>Sunset Beach</h3>
+                </article>
+                <article class="produit">
+                    <a href="images/image1.jpg" data-lightbox="image-mode" data-title="Earl of Moreland">
+                        <img src="images/image1.jpg">
+                    </a>
+                    <h3>Earl of Moreland</h3>
+                </article>
+                <article class="produit">
+                    <a href="images/image1.jpg" data-lightbox="image-mode" data-title="Eliza and John">
+                        <img src="images/image1.jpg">
+                    </a>
+                    <h3>Eliza and john</h3>
+                </article>
+                <article class="produit">
+                    <a href="images/image1.jpg" data-lightbox="image-mode" data-title="Hot Afternoon">
+                        <img src="images/image1.jpg">
+                    </a>
+                    <h3>hot afternoon</h3>
+                </article>
+                <article class="produit">
+                    <a href="images/image1.jpg" data-lightbox="image-mode" data-title="Long Walks">
+                        <img src="images/image1.jpg">
+                    </a>
+                    <h3>Long walks</h3>
+                </article>
+                <article class="produit">
+                    <a href="images/image1.jpg" data-lightbox="image-mode" data-title="Twilight">
+                        <img src="images/image1.jpg">
+                    </a>
+                    <h3>Twilight</h3>
+                </article>
+            </div>
+            <div id="bouton">
+                <p><a href="#">1</a> <a href="#">2</a> <a href="#">SUITE &gt;&gt;</p>
+            </div>
+        </section>
+
+        </section>
+        <footer id="pied">
+            <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
+                    alt="Logo fédération Française sports pour tous"></a>
+            <div class="copyright">
+                <p> &copy; GYM Tonic Saint-Servant - copyright 2024</p>
+                <a href="">mentions légales</a>
+            </div>
+        </footer>
+    </body>
+    <script src="scripts/lightbox-plus-jquery.js"></script>
+    <script type="text/javascript">
+        lightbox.option({
+            'showImageNumberLabel': false,
+            'wrapAround': true
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        $('.js-menu').on('click', () => {
+            $('.js-menu').toggleClass('active');
+            $('.js-nav').toggleClass('open');
+            $('.js-nav__list').toggleClass('show');
+        });
+    </script>
+</body>
+
+</html>

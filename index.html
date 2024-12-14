@@ -15,11 +15,26 @@
 
 <body>
     <header id="bandeau" class="container">
-        <img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
-            alt="Logo fédération Française">
+        <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
+                alt="Logo fédération Française"></a>
     </header>
 
     <body class="container">
+        <div class="menu js-menu">
+            <span class="menu__line"></span>
+            <span class="menu__line"></span>
+            <span class="menu__line"></span>
+        </div>
+        <nav class="nav js-nav">
+            <ul class="nav__list js-nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">ACCUEIL</a></li>
+                <li class="nav__item"><a href="nos-coachs.html" class="nav__link">NOS COACHS</a></li>
+                <li class="nav__item"><a href="galerie.html" class="nav__link">GALERIE</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">NEWS</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">CONTACT & INSCRIPTIONS</a></li>
+            </ul>
+        </nav>
+
         <!-- Slider main container -->
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -55,7 +70,7 @@
             </p>
         </section>
         <h2>cours et horaires</h2>
-        <section class="activites">
+        <section id="activites">
             <div class="carte-gym">
                 <div class="gym-img">
                     <img src="images/gym-douce.jpg" alt="Gym douce">
@@ -92,8 +107,8 @@
                         <p>Horaires</p>
                     </div>
                     <div class="edt-contenu">
-                        <p>Lundi</p>
-                        <p>15h00 - 16h00</p>
+                        <p>Jeudi</p>
+                        <p>19h30 - 20h30</p>
                     </div>
                 </div>
             </div>
@@ -109,31 +124,61 @@
                 </div>
                 <div class="tableau-edt">
                     <div class="edt-header">
-                        <p>Jour</p>
-                        <p>Horaires</p>
+                        <p>Lundi</p>
+                        <p>18h30 - 19h30</p>
                     </div>
                     <div class="edt-contenu">
-                        <p>Lundi</p>
-                        <p>15h00 - 16h00</p>
+                        <p>Mardi</p>
+                        <p>19h30 - 20h30</p>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="menu js-menu">
-            <span class="menu__line"></span>
-            <span class="menu__line"></span>
-            <span class="menu__line"></span>
-        </div>
-        <nav class="nav js-nav">
-            <ul class="nav__list js-nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">ACCUEIL</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">NOS COACHS</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">GALERIE</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">NEWS</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">CONTACT & INSCRIPTIONS</a></li>
-            </ul>
-        </nav>
-
+        <h2>tarifs</h2>
+        <section id="tarifs">
+            <table class="tableau-tarifs">
+                <thead>
+                    <tr>
+                        <th>ACTIVITÉS</th>
+                        <th>JOURS</th>
+                        <th class="col-horaires">HORAIRES</th>
+                        <th>TARIFS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gym Douce</td>
+                        <td>Lundi</td>
+                        <td class="col-horaires">15h00 - 16h00</td>
+                        <td rowspan="3">45€</td>
+                    </tr>
+                    <tr>
+                        <td>Gym Step</td>
+                        <td>Jeudi</td>
+                        <td class="col-horaires">19h30 - 20h30</td>
+                    </tr>
+                    <tr>
+                        <td>Gym Tonic</td>
+                        <td>
+                            Lundi<br>
+                            Mardi
+                        </td>
+                        <td class="col-horaires">
+                            18h30 - 19h30<br>
+                            19h30 - 20h30
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer id="pied">
+            <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
+                    alt="Logo fédération Française sports pour tous"></a>
+            <div class="copyright">
+                <p> &copy; GYM Tonic Saint-Servant - copyright 2024</p>
+                <a href="">mentions légales</a>
+            </div>
+        </footer>
     </body>
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
