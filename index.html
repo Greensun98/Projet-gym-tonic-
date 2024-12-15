@@ -13,196 +13,193 @@
     <link rel="stylesheet" href="scss/style.css">
 </head>
 
-<body>
+<body class="container">
     <header id="bandeau" class="container">
         <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
                 alt="Logo fédération Française"></a>
     </header>
+    <div class="menu js-menu">
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+    </div>
+    <nav class="nav js-nav">
+        <ul class="nav__list js-nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">accueil</a></li>
+            <li class="nav__item"><a href="nos-coachs.html" class="nav__link">nos coachs</a></li>
+            <li class="nav__item"><a href="galerie.html" class="nav__link">galerie</a></li>
+            <li class="nav__item"><a href="news.html" class="nav__link">actualités</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">contact &inscriptions</a></li>
+        </ul>
+    </nav>
 
-    <body class="container">
-        <div class="menu js-menu">
-            <span class="menu__line"></span>
-            <span class="menu__line"></span>
-            <span class="menu__line"></span>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background-image: url(images/photo-de-groupe.jpg);">
+
+                <h1>GYM TONIC <br> SAINT SERVANT</h1>
+            </div>
+            <div class="swiper-slide" style="background-image: url(images/image1.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(images/image2.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(images/image3.jpg);"></div>
         </div>
-        <nav class="nav js-nav">
-            <ul class="nav__list js-nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">ACCUEIL</a></li>
-                <li class="nav__item"><a href="nos-coachs.html" class="nav__link">NOS COACHS</a></li>
-                <li class="nav__item"><a href="galerie.html" class="nav__link">GALERIE</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">NEWS</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">CONTACT & INSCRIPTIONS</a></li>
-            </ul>
-        </nav>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide" style="background-image: url(images/photo-de-groupe.jpg);">
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <h2>Qui sommes nous ?</h2>
+    <section id="presentation">
 
-                    <h1>GYM TONIC <br> SAINT SERVANT</h1>
-                </div>
-                <div class="swiper-slide" style="background-image: url(images/image1.jpg);"></div>
-                <div class="swiper-slide" style="background-image: url(images/image2.jpg);"></div>
-                <div class="swiper-slide" style="background-image: url(images/image3.jpg);"></div>
+        <p>Le Gym Tonic de Saint Servant est une association conviviale ouverte à tous dès 8 ans. Elle propose
+            plusieurs activités adaptées à différents besoins :
+
+            <br> <span>Gym Tonic :</span> Renforcement musculaire, Pilates, cardio, abdos-fessiers, avec des outils
+            variés comme
+            le
+            BOSU, trampolines, barres et poids.
+            <br> <span>Gym Douce & Pilates :</span> Renforcement en douceur, équilibre, coordination et souplesse.
+            <br><span>Step :</span> Séances cardio rythmées en musique, idéales en complément de la gym..
+        </p>
+    </section>
+    <h2>cours et horaires</h2>
+    <section id="activites">
+        <div class="carte-gym">
+            <div class="gym-img">
+                <img src="images/gym-douce.jpg" alt="Gym douce">
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="gym-info">
+                <h3>gym douce</h3>
+                <p>Gym douce & Pilates<br>Renforcement musculaire, équilibre, coordination, souplesse.</p>
+                <p class="complement">Ouvert à tout public à partir de 8 ans.</p>
+            </div>
+            <div class="tableau-edt">
+                <div class="edt-header">
+                    <p>Jour</p>
+                    <p>Horaires</p>
+                </div>
+                <div class="edt-contenu">
+                    <p>Lundi</p>
+                    <p>15h00 - 16h00</p>
+                </div>
+            </div>
         </div>
-        <h2>Qui sommes nous ?</h2>
-        <section id="presentation">
-
-            <p>Le Gym Tonic de Saint Servant est une association conviviale ouverte à tous dès 8 ans. Elle propose
-                plusieurs activités adaptées à différents besoins :
-
-                <br> <span>Gym Tonic :</span> Renforcement musculaire, Pilates, cardio, abdos-fessiers, avec des outils
-                variés comme
-                le
-                BOSU, trampolines, barres et poids.
-                <br> <span>Gym Douce & Pilates :</span> Renforcement en douceur, équilibre, coordination et souplesse.
-                <br><span>Step :</span> Séances cardio rythmées en musique, idéales en complément de la gym..
-            </p>
-        </section>
-        <h2>cours et horaires</h2>
-        <section id="activites">
-            <div class="carte-gym">
-                <div class="gym-img">
-                    <img src="images/gym-douce.jpg" alt="Gym douce">
+        <div class="carte-gym">
+            <div class="gym-img">
+                <img src="images/step.jpg" alt="Gym douce">
+            </div>
+            <div class="gym-info">
+                <h3>step</h3>
+                <p>Intensif, rythmé et en musique, le STEP est une activité intensive se déroulant dans une ambiance
+                    décontractée.</p>
+                <p class="complement">Activité qui peut être complémentaire à la GYM. (conseillé)</p>
+            </div>
+            <div class="tableau-edt">
+                <div class="edt-header">
+                    <p>Jour</p>
+                    <p>Horaires</p>
                 </div>
-                <div class="gym-info">
-                    <h3>gym douce</h3>
-                    <p>Gym douce & Pilates<br>Renforcement musculaire, équilibre, coordination, souplesse.</p>
-                    <p class="complement">Ouvert à tout public à partir de 8 ans.</p>
-                </div>
-                <div class="tableau-edt">
-                    <div class="edt-header">
-                        <p>Jour</p>
-                        <p>Horaires</p>
-                    </div>
-                    <div class="edt-contenu">
-                        <p>Lundi</p>
-                        <p>15h00 - 16h00</p>
-                    </div>
+                <div class="edt-contenu">
+                    <p>Jeudi</p>
+                    <p>19h30 - 20h30</p>
                 </div>
             </div>
-            <div class="carte-gym">
-                <div class="gym-img">
-                    <img src="images/step.jpg" alt="Gym douce">
+        </div>
+        <div class="carte-gym">
+            <div class="gym-img">
+                <img src="images/gym-tonic2.jpg" alt="Gym douce">
+            </div>
+            <div class="gym-info">
+                <h3>gym tonic</h3>
+                <p>Renforcement musculaire & Pilates, cardio, abdos, fessiers - Outils utilisés comme le BOSU,
+                    Trampolines individuels, barres, poids ...</p>
+                <p class="complement">Ouvert à tout public à partir de 8 ans.</p>
+            </div>
+            <div class="tableau-edt">
+                <div class="edt-header">
+                    <p>Lundi</p>
+                    <p>18h30 - 19h30</p>
                 </div>
-                <div class="gym-info">
-                    <h3>step</h3>
-                    <p>Intensif, rythmé et en musique, le STEP est une activité intensive se déroulant dans une ambiance
-                        décontractée.</p>
-                    <p class="complement">Activité qui peut être complémentaire à la GYM. (conseillé)</p>
-                </div>
-                <div class="tableau-edt">
-                    <div class="edt-header">
-                        <p>Jour</p>
-                        <p>Horaires</p>
-                    </div>
-                    <div class="edt-contenu">
-                        <p>Jeudi</p>
-                        <p>19h30 - 20h30</p>
-                    </div>
+                <div class="edt-contenu">
+                    <p>Mardi</p>
+                    <p>19h30 - 20h30</p>
                 </div>
             </div>
-            <div class="carte-gym">
-                <div class="gym-img">
-                    <img src="images/gym-tonic2.jpg" alt="Gym douce">
-                </div>
-                <div class="gym-info">
-                    <h3>gym tonic</h3>
-                    <p>Renforcement musculaire & Pilates, cardio, abdos, fessiers - Outils utilisés comme le BOSU,
-                        Trampolines individuels, barres, poids ...</p>
-                    <p class="complement">Ouvert à tout public à partir de 8 ans.</p>
-                </div>
-                <div class="tableau-edt">
-                    <div class="edt-header">
-                        <p>Lundi</p>
-                        <p>18h30 - 19h30</p>
-                    </div>
-                    <div class="edt-contenu">
-                        <p>Mardi</p>
-                        <p>19h30 - 20h30</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <h2>tarifs</h2>
-        <section id="tarifs">
-            <table class="tableau-tarifs">
-                <thead>
-                    <tr>
-                        <th>ACTIVITÉS</th>
-                        <th>JOURS</th>
-                        <th class="col-horaires">HORAIRES</th>
-                        <th>TARIFS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Gym Douce</td>
-                        <td>Lundi</td>
-                        <td class="col-horaires">15h00 - 16h00</td>
-                        <td rowspan="3">45€</td>
-                    </tr>
-                    <tr>
-                        <td>Gym Step</td>
-                        <td>Jeudi</td>
-                        <td class="col-horaires">19h30 - 20h30</td>
-                    </tr>
-                    <tr>
-                        <td>Gym Tonic</td>
-                        <td>
-                            Lundi<br>
-                            Mardi
-                        </td>
-                        <td class="col-horaires">
-                            18h30 - 19h30<br>
-                            19h30 - 20h30
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <footer id="pied">
-            <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
-                    alt="Logo fédération Française sports pour tous"></a>
-            <div class="copyright">
-                <p> &copy; GYM Tonic Saint-Servant - copyright 2024</p>
-                <a href="">mentions légales</a>
-            </div>
-        </footer>
-    </body>
-    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="text/javascript">
-        $('.js-menu').on('click', () => {
-            $('.js-menu').toggleClass('active');
-            $('.js-nav').toggleClass('open');
-            $('.js-nav__list').toggleClass('show');
-        });
-        const swiper = new Swiper('.swiper', {
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
+        </div>
+    </section>
+    <h2>tarifs</h2>
+    <section id="tarifs">
+        <table class="tableau-tarifs">
+            <thead>
+                <tr>
+                    <th>ACTIVITÉS</th>
+                    <th>JOURS</th>
+                    <th class="col-horaires">HORAIRES</th>
+                    <th>TARIFS</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Gym Douce</td>
+                <td>Lundi</td>
+                <td class="col-horaires">15h00 - 16h00</td>
+                <td rowspan="3">45€</td>
+            </tr>
+            <tr>
+                <td>Gym Step</td>
+                <td>Jeudi</td>
+                <td class="col-horaires">19h30 - 20h30</td>
+            </tr>
+            <tr>
+                <td>Gym Tonic</td>
+                <td>
+                    Lundi<br>
+                    Mardi
+                </td>
+                <td class="col-horaires">
+                    18h30 - 19h30<br>
+                    19h30 - 20h30
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer id="pied">
+        <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
+                alt="Logo fédération Française sports pour tous"></a>
+        <div class="copyright">
+            <p> &copy; GYM Tonic Saint-Servant - copyright 2024</p>
+            <a href="">mentions légales</a>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    $('.js-menu').on('click', () => {
+        $('.js-menu').toggleClass('active');
+        $('.js-nav').toggleClass('open');
+        $('.js-nav__list').toggleClass('show');
+    });
+    const swiper = new Swiper('.swiper', {
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
 
-            loop: true,
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            }
-        });
+        loop: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
 
-    </script>
+</script>
 </body>
 
 </html>

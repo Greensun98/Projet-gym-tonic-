@@ -1,0 +1,19 @@
+#liste-produits {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .produit p {
+        margin-top: 8px;
+        margin-bottom: 56px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .produit img {
+        width: 391px;
+        height: 220px;
+    }
+}

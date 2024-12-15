@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM tonic</title>
+    <!-- <meta name ="description" content=""> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="scss/lightbox.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body class="container">
+    <header id="bandeau" class="container">
+        <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
+                alt="Logo fédération Française"></a>
+    </header>
+    <div class="menu js-menu">
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+    </div>
+    <nav class="nav js-nav">
+        <ul class="nav__list js-nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">accueil</a></li>
+            <li class="nav__item"><a href="nos-coachs.html" class="nav__link">nos coachs</a></li>
+            <li class="nav__item"><a href="galerie.html" class="nav__link">galerie</a></li>
+            <li class="nav__item"><a href="news.html" class="nav__link">actualités</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">contact &inscriptions</a></li>
+        </ul>
+    </nav>
+    <section id="news">
+        <h2>Actualités</h2>
+        <article class="news-article">
+            <div class="img-article">
+                <img src="images/photo-de-groupe.jpg" alt="Rentrée 2024">
+            </div>
+            <div class="actualite">
+                <h3>Reprise des cours et forum 2024-2025</h3>
+                <p>Les cours reprendront le Lundi 9 Septembre 2024 !
+                    Pour information nous serons présent au forum des associations le samedi 7 septembre 2024,
+                    après-midi à
+                    GUÉGON.
+                    Inscriptions possibles au Forum ainsi que le Lundi 2 et Mardi 3 septembre aux heures de cours à la
+                    salle
+                    des sports de SAINT SERVANT.
+                </p>
+            </div>
+        </article>
+        <article class="news-article">
+            <div class="img-article">
+                <img src="images/articles/karaoke.png" alt="Téléthon 2024">
+            </div>
+            <div class="actualite">
+
+                <h3>La gym tonic soutient le téléthon</h3>
+                <p>Depuis de nombreuses années, l'association de GYM TONIC de Saint Servant, soutient le Téléthon.
+                    Partenaire à 100% du Téléthon de St Servant, nous vous proposons de venir profiter d'une soirée
+                    Karaoké
+                    le vendredi 4 octobre 2024 à la salle polyvalente de Saint Servant sur oust (56120).
+                </p>
+            </div>
+        </article>
+        <article class="news-article">
+            <div class="img-article">
+                <img src="images/articles/fin-2023.webp" alt="Pot de fin d'année">
+            </div>
+            <div class="actualite">
+                <h3>Pot de fin d'année 2023-2024</h3>
+                <p>Comme tous les ans, pour le dernier cours, nous partageons ensemble un pot de fin d'année.
+                    Un moment de convivialité avant les grandes vacances !
+                </p>
+            </div>
+        </article>
+        <article class="news-article">
+            <div class="img-article">
+                <img src="images/Ignacio Varga.jpg" alt="Ignacio Varga">
+            </div>
+            <div class="actualite">
+                <h3>La gym tonic accueil un nouveau coach</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quasi beatae dignissimos
+                    voluptatum obcaecati similique maxime distinctio totam. Rem laudantium impedit molestiae dicta
+                    sapiente
+                    odio, vel assumenda eius natus numquam?
+                </p>
+            </div>
+        </article>
+    </section>
+    <footer id="pied">
+        <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
+                alt="Logo fédération Française sports pour tous"></a>
+        <div class="copyright">
+            <p> &copy; GYM Tonic Saint-Servant - copyright 2024</p>
+            <a href="">mentions légales</a>
+        </div>
+    </footer>
+</body>
+</script>
+<script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    $('.js-menu').on('click', () => {
+        $('.js-menu').toggleClass('active');
+        $('.js-nav').toggleClass('open');
+        $('.js-nav__list').toggleClass('show');
+    });
+</script>
+</body>
+
+</html>

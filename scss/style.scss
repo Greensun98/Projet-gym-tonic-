@@ -2,6 +2,7 @@
 @import './_burgerMenu';
 @import './nos-coachs.scss';
 @import './galerie';
+@import './news';
 
 @font-face {
     font-display: swap;
@@ -33,7 +34,6 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    background-color: grey;
 }
 
 p {
@@ -99,6 +99,7 @@ h2 {
 
 .nav__link {
     color: $text3;
+    text-transform: uppercase;
 }
 
 /*--------------------slider--------------------*/
@@ -276,20 +277,17 @@ h2 {
     display: flex;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
     background-color: $background2;
     margin-top: 100px;
     padding: 48px 16px;
 
-    img {
+    a img {
         width: 108px;
     }
 
     .copyright {
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     a {

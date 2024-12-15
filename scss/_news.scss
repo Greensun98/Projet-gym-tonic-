@@ -1,0 +1,28 @@
+.news-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 391px;
+    margin: auto;
+    margin-bottom: 56px;
+
+    .img-article {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .actualite {
+        background-color: $background2;
+        padding: 20px;
+        text-align: center;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+    }
+
+}
