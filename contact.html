@@ -10,7 +10,6 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="scss/lightbox.css">
     <link rel="stylesheet" href="scss/style.css">
 </head>
 
@@ -30,66 +29,64 @@
             <li class="nav__item"><a href="nos-coachs.html" class="nav__link">nos coachs</a></li>
             <li class="nav__item"><a href="galerie.html" class="nav__link">galerie</a></li>
             <li class="nav__item"><a href="news.html" class="nav__link">actualités</a></li>
-            <li class="nav__item"><a href="contact.html" class="nav__link">contact & inscriptions</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">contact &inscriptions</a></li>
         </ul>
     </nav>
-    <section id="galerie" class="container">
-        <div id="liste-produits">
-            <article class="produit">
-                <h2>Galerie</h2>
-                <a href="images/image1.jpg" data-lightbox="image-mode" data-title="Sunset Beach">
-                    <img src="images/image1.jpg">
-                </a>
-                <p>Séance de gym douce à l'aide de bossu</p>
-            </article>
-            <article class="produit">
-                <a href="images/image2.jpg" data-lightbox="image-mode" data-title="Earl of Moreland">
-                    <img src="images/image2.jpg">
-                </a>
-                <p>Exercice d'équilibre</p>
-            </article>
-            <article class="produit">
-                <a href="images/image3.jpg" data-lightbox="image-mode" data-title="Eliza and John">
-                    <img src="images/image3.jpg">
-                </a>
-                <p>Exercice de renformcement musculaire</p>
-            </article>
-            <article class="produit">
-                <a href="images/image4.jpg" data-lightbox="image-mode" data-title="Hot Afternoon">
-                    <img src="images/image4.jpg">
-                </a>
-                <p>échauffement à l'aide d'élastiques</p>
-            </article>
-            <article class="produit">
-                <a href="images/image5.jpg" data-lightbox="image-mode" data-title="Long Walks">
-                    <img src="images/image5.jpg">
-                </a>
-                <p>Une séance de step</p>
-            </article>
-            <article class="produit">
-                <a href="images/image6.jpg" data-lightbox="image-mode" data-title="Twilight">
-                    <img src="images/image6.jpg">
-                </a>
-                <h3>Twilight</h3>
-            </article>
+    <section id="noustrouver">
+        <div id="map">
+            <h2>nous trouver</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1784.6819234209422!2d-2.5199066253948414!3d47.91700806586888!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sus!4v1734432398634!5m2!1sfr!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <div class="carte-contact">
+            <div class="contact-info">
+                <h3>association gym tonic saint servant</h3>
+                <p> <span>Le Bureau :</span> <br>
+
+                    Aline RICHARD : Présidente <br>
+                    Dominique COUÉ : Trésorière <br>
+                    Isabelle COUÉ: Secrétaire <br>
+
+                    <span>Membres : </span><br>
+
+                    Michelle BALLAND <br>
+                    Marie-France ROUXEL <br>
+                    Nicole ANCEAUX
+                </p>
+                <div class="complement">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                        Salle des sports, le stade <br>
+                        56 120 Saint-servant
+                    </p>
+                </div>
+            </div>
+            <h2>Nous écrire</h2>
+            <div id="formulaire">
+                <div class="ecrire">
+                    <form action="contact.php" method="post">
+                        <p><label for="nom">Nom</label> <br> <input type="text" name="nom" id="nom" placeholder="Nom">
+                        </p>
+                        <p><label for="email">Email</label> <br> <input type="email" name="email" id="email"
+                                placeholder="email@adress.com"></p>
+                        <p><label for="message">Message</label> <br> <textarea name="message" id="message" rows="5"
+                                placeholder="Votre Message"></textarea></p>
+                        <p><input type="submit" value="ENVOYER"></p>
+
+                    </form>
+                </div>
     </section>
     <footer id="pied">
         <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
                 alt="Logo fédération Française sports pour tous"></a>
         <div class="copyright">
             <p> &copy; GYM Tonic Saint-Servant - copyright 2024</p>
-            <a href="">mentions légales</a>
+            <a href="mentions-legales.html" target="blank">mentions légales</a>
         </div>
     </footer>
 </body>
-<script src="scripts/lightbox-plus-jquery.js"></script>
-<script type="text/javascript">
-    lightbox.option({
-        'showImageNumberLabel': false,
-        'wrapAround': true
-    })
-</script>
 <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="text/javascript">

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM tonic</title>
+    <!-- <meta name ="description" content=""> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body class="container">
+    <header id="bandeau" class="container">
+        <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
+                alt="Logo fédération Française"></a>
+    </header>
+    <div class="menu js-menu">
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+        <span class="menu__line"></span>
+    </div>
+    <nav class="nav js-nav">
+        <ul class="nav__list js-nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">accueil</a></li>
+            <li class="nav__item"><a href="nos-coachs.html" class="nav__link">nos coachs</a></li>
+            <li class="nav__item"><a href="galerie.html" class="nav__link">galerie</a></li>
+            <li class="nav__item"><a href="news.html" class="nav__link">actualités</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">contact &inscriptions</a></li>
+        </ul>
+    </nav>
+    <section id="mentions-legales">
+        <h2>Mentions légales</h2>
+        <h3>éditeur du site</h3>
+        <p>Nom du particulier : Le Coguic Pol-Erwan <br>
+            Statut juridique : Bancale <br>
+            Adresse du siège social : Lune <br>
+            Téléphone : 0101010101 <br>
+            Email : la-lune-C-loin@gmail.com <br>
+            Numéro SIRET : 24 <br>
+            Directeur de la publication : Le Coguic Pol-Erwan</p>
+        <h3>Hébergement</h3>
+        <p>Hébergeur : Oasis <br>
+            Adresse : Une île tropical <br>
+            Téléphone : 12028240 <br>
+            Site web : https://oasis-sirop.com/</p>
+        <h3>Propriété intellectuelle</h3>
+        <p>L’ensemble des contenus présents sur ce site (textes, images, graphismes, logos, etc.) est la propriété
+            exclusive de Association Française des sports pour tous ou fait l’objet d’une autorisation d’utilisation.
+            Toute
+            reproduction, distribution, ou utilisation de ces contenus sans autorisation préalable est strictement
+            interdite</p>
+        <h3>Protection des données personnelles</h3>
+        <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la Loi Informatique et Libertés,
+            vous disposez d’un droit d’accès, de rectification, d’opposition et de suppression des données vous
+            concernant. Pour exercer ce droit, contactez-nous à : jeNeVeuxPasRécupererMesDonnees@gmail.com.
+
+            Finalité des données collectées : formulaire de contact.
+            Durée de conservation des données : 78 ans</p>
+        <h3>Cookies</h3>
+        <p>Le site utilise des cookies afin d’améliorer l’expérience utilisateur. Lors de votre visite, vous pouvez
+            accepter ou refuser l’installation des cookies via un bandeau de consentement. Vous pouvez modifier vos
+            préférences à tout moment en accédant aux paramètres de votre navigateur.</p>
+        <h3>Liens hypertextes</h3>
+        <p>Le site peut contenir des liens hypertextes vers d'autres sites. Gym Tonic n'exerce aucun contrôle
+            sur le contenu des sites tiers et ne saurait être tenu responsable de leurs contenus ou de leur utilisation.
+        </p>
+        <h3>Résponsabilité</h3>
+        <p>L’éditeur ne peut être tenu responsable des dommages directs ou indirects résultant de l’accès ou de
+            l’utilisation du site. Le site est mis à jour régulièrement, mais des erreurs ou omissions peuvent survenir.
+        </p>
+        <h3>Droit applicable</h3>
+        <p>Les présentes mentions légales sont soumises au droit français. En cas de litige, et à défaut de résolution
+            amiable, les tribunaux compétents seront ceux du lieu du siège social de l’éditeur.</p>
+    </section>
+    <footer id="pied">
+        <a href="index.html"><img src="images/Federation_Francaise_EPMM_Sports_pour_Tous-removebg-preview.png"
+                alt="Logo fédération Française sports pour tous"></a>
+        <div class="copyright">
+            <p> &copy; GYM Tonic Saint-Servant - copyright 2024</p>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    $('.js-menu').on('click', () => {
+        $('.js-menu').toggleClass('active');
+        $('.js-nav').toggleClass('open');
+        $('.js-nav__list').toggleClass('show');
+    });
+</script>
+</body>
+
+</html>

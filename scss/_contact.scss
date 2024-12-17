@@ -1,0 +1,101 @@
+#map {
+    margin: 20px;
+
+    iframe {
+        width: 391px;
+        height: 391px;
+    }
+}
+
+.carte-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 391px;
+    margin: auto;
+    margin-bottom: 56px;
+    margin-top: 56px;
+
+    .gym-img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .contact-info {
+        background-color: $background2;
+        text-align: left;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 20px;
+            background-color: $background1;
+            color: $text3;
+        }
+
+        p {
+            padding-left: 32px;
+            padding-bottom: 32px;
+        }
+
+        p span {
+            font-weight: bold;
+            line-height: 350%;
+        }
+
+        .complement {
+            display: flex;
+            margin-left: 32px;
+
+            i {
+                font-size: 2rem
+            }
+        }
+    }
+}
+
+#formulaire {
+    form {
+        p {
+            margin-top: 10px;
+
+            input {
+                width: 391px;
+                padding: 8px;
+                margin-bottom: 8px;
+                border-radius: 0;
+                border: none;
+                background-color: $background2;
+            }
+
+            label {
+                display: inline-block;
+                vertical-align: top;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+            textarea {
+                width: 391px;
+                padding: 8px;
+                border-radius: 0;
+                border: none;
+                background-color: $background2;
+            }
+
+            input[type=submit] {
+                width: 10rem;
+                margin-top: 10px;
+                background-color: $background1;
+                color: $text3;
+                border: none;
+                padding: 8px 20px;
+            }
+        }
+    }
+
+}

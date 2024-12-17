@@ -1,8 +1,9 @@
-@import './config';
+@import './_config';
 @import './_burgerMenu';
-@import './nos-coachs.scss';
-@import './galerie';
-@import './news';
+@import './_nos-coachs';
+@import './_galerie';
+@import './_news';
+@import './_contact';
 
 @font-face {
     font-display: swap;
@@ -65,8 +66,6 @@ h4 {
 h2 {
     font-size: 1.7rem;
     text-transform: uppercase;
-    margin-left: 11px;
-    padding: 8px;
     margin-top: 56px;
     margin-bottom: 16px;
 }
@@ -233,54 +232,60 @@ h2 {
 
 /*-----------------------Tarifs-----------------------------*/
 
-.tableau-tarifs {
-    margin: auto;
-    border-collapse: collapse;
-    background-color: $background2;
-    font-family: "made_tommyregular";
-    text-align: center;
-    border: solid 1px $background1;
-
-    th {
-        background-color: $background1;
-        color: $text3;
-        padding: 12px;
-        text-transform: uppercase;
-        font-weight: bold;
+#tarifs {
+    h2 {
+        margin-left: 1.2rem;
     }
 
-    td {
-        padding: 10px;
-        border: 1px solid $background1;
-
-        br {
-            margin-bottom: 5px;
-        }
-    }
-
-    tr:nth-child(even) {
+    .tableau-tarifs {
+        margin: auto;
+        border-collapse: collapse;
         background-color: $background2;
-    }
+        font-family: "made_tommyregular";
+        text-align: center;
+        border: solid 1px $background1;
+
+        th {
+            background-color: $background1;
+            color: $text3;
+            padding: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid $background1;
+
+            br {
+                margin-bottom: 5px;
+            }
+        }
+
+        tr:nth-child(even) {
+            background-color: $background2;
+        }
 
 
-    th:nth-child(3) {
-        padding: 10px 25px;
-    }
+        th:nth-child(3) {
+            padding: 10px 25px;
+        }
 
-    th:nth-child(1) {
-        padding: 10px 15px;
+        th:nth-child(1) {
+            padding: 10px 15px;
+        }
     }
 }
 
 /*--------------------Pied de page---------------------------*/
 #pied {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: $background2;
     margin-top: 100px;
-    padding: 48px 16px;
+    padding: 16px 16px;
 
     a img {
         width: 108px;
@@ -297,4 +302,15 @@ h2 {
         text-decoration: underline;
     }
 
+}
+
+/*------------------------Mentions légales------------------------*/
+
+#mentions-legales {
+    margin: 0 40px;
+
+    h3 {
+        margin-bottom: 8px;
+        margin-top: 24px;
+    }
 }

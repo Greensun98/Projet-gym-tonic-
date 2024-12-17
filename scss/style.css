@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   box-sizing: border-box;
@@ -156,7 +157,7 @@
     opacity: 1;
   }
 }
-.carte-coach {
+#nos-coachs .carte-coach {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -164,46 +165,18 @@
   margin: auto;
   margin-bottom: 56px;
 }
-.carte-coach .gym-img img {
+#nos-coachs .carte-coach .coach-img img {
   width: 100%;
   height: auto;
 }
-.carte-coach .gym-info {
+#nos-coachs .carte-coach .coach-info {
   background-color: #DCECF3;
   padding: 20px;
   text-align: center;
 }
-.carte-coach .gym-info h3 {
+#nos-coachs .carte-coach .coach-info h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-}
-.carte-coach .gym-info .complement {
-  font-weight: bold;
-  margin-top: 15px;
-}
-.carte-coach .tableau-edt {
-  background-color: #DCECF3;
-}
-.carte-coach .tableau-edt p {
-  font-family: "made_tommyregular";
-  font-weight: 500;
-}
-.carte-coach .tableau-edt .edt-header {
-  background-color: #A4BECA;
-}
-.carte-coach .edt-header,
-.carte-coach .edt-contenu {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px 0;
-  border-bottom: 3px solid #0B4E9C;
-  text-align: center;
-}
-.carte-coach .edt-contenu {
-  border-bottom: none;
-}
-.carte-coach .edt-header p {
-  font-weight: 900;
 }
 
 #liste-produits {
@@ -244,6 +217,89 @@
 .news-article .actualite h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+}
+
+#map {
+  margin: 20px;
+}
+#map iframe {
+  width: 391px;
+  height: 391px;
+}
+
+.carte-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 391px;
+  margin: auto;
+  margin-bottom: 56px;
+  margin-top: 56px;
+}
+.carte-contact .gym-img img {
+  width: 100%;
+  height: auto;
+}
+.carte-contact .contact-info {
+  background-color: #DCECF3;
+  text-align: left;
+}
+.carte-contact .contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 20px;
+  background-color: #0B4E9C;
+  color: #DCECF3;
+}
+.carte-contact .contact-info p {
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+.carte-contact .contact-info p span {
+  font-weight: bold;
+  line-height: 350%;
+}
+.carte-contact .contact-info .complement {
+  display: flex;
+  margin-left: 32px;
+}
+.carte-contact .contact-info .complement i {
+  font-size: 2rem;
+}
+
+#formulaire form p {
+  margin-top: 10px;
+}
+#formulaire form p input {
+  width: 391px;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 0;
+  border: none;
+  background-color: #DCECF3;
+}
+#formulaire form p label {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#formulaire form p textarea {
+  width: 391px;
+  padding: 8px;
+  border-radius: 0;
+  border: none;
+  background-color: #DCECF3;
+}
+#formulaire form p input[type=submit] {
+  width: 10rem;
+  margin-top: 10px;
+  background-color: #0B4E9C;
+  color: #DCECF3;
+  border: none;
+  padding: 8px 20px;
 }
 
 @font-face {
@@ -303,8 +359,6 @@ h4 {
 h2 {
   font-size: 1.7rem;
   text-transform: uppercase;
-  margin-left: 11px;
-  padding: 8px;
   margin-top: 56px;
   margin-bottom: 16px;
 }
@@ -445,7 +499,10 @@ h2 {
 }
 
 /*-----------------------Tarifs-----------------------------*/
-.tableau-tarifs {
+#tarifs h2 {
+  margin-left: 1.2rem;
+}
+#tarifs .tableau-tarifs {
   margin: auto;
   border-collapse: collapse;
   background-color: #DCECF3;
@@ -453,39 +510,39 @@ h2 {
   text-align: center;
   border: solid 1px #0B4E9C;
 }
-.tableau-tarifs th {
+#tarifs .tableau-tarifs th {
   background-color: #0B4E9C;
   color: #DCECF3;
   padding: 12px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.tableau-tarifs td {
+#tarifs .tableau-tarifs td {
   padding: 10px;
   border: 1px solid #0B4E9C;
 }
-.tableau-tarifs td br {
+#tarifs .tableau-tarifs td br {
   margin-bottom: 5px;
 }
-.tableau-tarifs tr:nth-child(even) {
+#tarifs .tableau-tarifs tr:nth-child(even) {
   background-color: #DCECF3;
 }
-.tableau-tarifs th:nth-child(3) {
+#tarifs .tableau-tarifs th:nth-child(3) {
   padding: 10px 25px;
 }
-.tableau-tarifs th:nth-child(1) {
+#tarifs .tableau-tarifs th:nth-child(1) {
   padding: 10px 15px;
 }
 
 /*--------------------Pied de page---------------------------*/
 #pied {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #DCECF3;
   margin-top: 100px;
-  padding: 48px 16px;
+  padding: 16px 16px;
 }
 #pied a img {
   width: 108px;
@@ -498,4 +555,13 @@ h2 {
   margin-top: 15px;
   font-size: 14px;
   text-decoration: underline;
+}
+
+/*------------------------Mentions légales------------------------*/
+#mentions-legales {
+  margin: 0 40px;
+}
+#mentions-legales h3 {
+  margin-bottom: 8px;
+  margin-top: 24px;
 }/*# sourceMappingURL=style.css.map */
